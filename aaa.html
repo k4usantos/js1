@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+
+    function load(){
+       var xnome = prompt("Digite seu nome");
+        alert('seu nome é lindo');
+    }
+
+    function soma(){
+        numero1.value = parseFloat(num1.value) + parseFloat(num2.value);
+    } 
+
+    function multiplicação(){
+        numero1.value = parseFloat(num1.value) * parseFloat(num2.value);
+    }
+
+
+</script>
+<body onload="load()">
+    <h1>Cálculos:</h1>
+    Valor 1: <input id="num1" type="text" value="0"><br>
+    Valor 2: <input id="num2" type="text" value="0"><br>
+    <input type="button" value="somar" onclick="soma()">
+    <input type="button" value="multiplicar" onclick="multiplicação()">
+    Resultados: <input type="text" value="0" id="numero1">
+    
+</body>
+</html>
